@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="[?`-Q|SWERp!vyYyko;t">player1</variable><variable id="D0yrS,Yxfv(sF+Qy*sE4">food</variable><variable type="KIND_SpriteKind" id=":]:nG|u^`[?0~8a`yGrh">Player</variable><variable type="KIND_SpriteKind" id="k6V|2RCEDa)qS2ywI,`%">Projectile</variable><variable type="KIND_SpriteKind" id="Q8PvaAlJs7^]A+ps?ruT">Food</variable><variable type="KIND_SpriteKind" id="eSMBc7%-}GMG}F(SSIa:">Enemy</variable></variables><block type="pxt-on-start" id="8yNn[n1!x:K%nG$LdtD9" x="20" y="20"><statement name="HANDLER"><block type="tilemap_editor" id="s+AOLb4%qD3sG|xyX:3s"><field name="tilemap">tilemap`level_0`</field><next><block type="variables_set" id="$Seeue*M/~f3JGukjYf]"><field name="VAR" id="[?`-Q|SWERp!vyYyko;t">player1</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="u0/ZX^HnSLmPVq]y]gyL"><value name="img"><shadow type="screen_image_picker" id="BqKOi2)|zG}:c0wf}bia"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . b 5 b . . . 
+. . . . . . . . . b 5 b . . . . 
+. . . . . . b b b b b b . . . . 
+. . . . . b b 5 5 5 5 5 b . . . 
+. b b b b b 5 5 5 5 5 5 5 b . . 
+. b d 5 b 5 5 5 5 5 5 5 5 b . . 
+. . b 5 5 b 5 d 1 f 5 d 4 f . . 
+. . b d 5 5 b 1 f f 5 4 4 c . . 
+b b d b 5 5 5 d f b 4 4 4 4 4 b 
+b d d c d 5 5 b 5 4 4 4 4 4 b . 
+c d d d c c b 5 5 5 5 5 5 5 b . 
+c b d d d d d 5 5 5 5 5 5 5 b . 
+. c d d d d d d 5 5 5 5 5 d b . 
+. . c b d d d d d 5 5 5 b b . . 
+. . . c c c c c c c c b b . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="RiTq6u9=Ib0($P;aq%BR"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="variables_set" id="0ix[oQL$hRDNe!hq[9;-"><field name="VAR" id="D0yrS,Yxfv(sF+Qy*sE4">food</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="zJr^XE4s@-G0j|$aeBKQ"><value name="img"><shadow type="screen_image_picker" id="bXGj;-_0IZxJ0h%2M}*B"><field name="img">img`
+. . . . . . . e e e e . . . . . 
+. . . . . e e 4 5 5 5 e e . . . 
+. . . . e 4 5 6 2 2 7 6 6 e . . 
+. . . e 5 6 6 7 2 2 6 4 4 4 e . 
+. . e 5 2 2 7 6 6 4 5 5 5 5 4 . 
+. e 5 6 2 2 8 8 5 5 5 5 5 4 5 4 
+. e 5 6 7 7 8 5 4 5 4 5 5 5 5 4 
+e 4 5 8 6 6 5 5 5 5 5 5 4 5 5 4 
+e 5 c e 8 5 5 5 4 5 5 5 5 5 5 4 
+e 5 c c e 5 4 5 5 5 4 5 5 5 e . 
+e 5 c c 5 5 5 5 5 5 5 5 4 e . . 
+e 5 e c 5 4 5 4 5 5 5 e e . . . 
+e 5 e e 5 5 5 5 5 4 e . . . . . 
+4 5 4 e 5 5 5 5 e e . . . . . . 
+. 4 5 4 5 5 4 e . . . . . . . . 
+. . 4 4 e e e . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="tKD}k1C-(nu5)UV]$$Qd"><field name="MEMBER">Food</field></shadow></value></block></value><next><block type="game_control_sprite" id="{KGLKHNz?HG|Zhs]a2=R"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><shadow type="variables_get" id="EDw|(0w_QtT(f1w(|yEM"><field name="VAR" id="[?`-Q|SWERp!vyYyko;t">player1</field></shadow></value><next><block type="camerafollow" id="SyGf2fpV;t!]9BeMQ$fr"><value name="sprite"><shadow type="variables_get" id="E%n$V$;^9!EO-kVjNmO2"><field name="VAR" id="[?`-Q|SWERp!vyYyko;t">player1</field></shadow></value><next><block type="mapplaceonrandomtile" id="Iq2]sD*uHt1z/zNXh$,V"><value name="sprite"><shadow type="variables_get" id="CRe%cdM@eC[)o~SL1hT*"><field name="VAR" id="[?`-Q|SWERp!vyYyko;t">player1</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="CcX!V!xfc_1(XG|ox]3+"><field name="tile">sprites.castle.tilePath1</field></shadow></value><next><block type="mapplaceonrandomtile" id="%xulG;pf3/SDu-|7RLP%"><value name="sprite"><shadow type="variables_get" id="3tuCKHowiHv0#Vb%2ndO"><field name="VAR" id="D0yrS,Yxfv(sF+Qy*sE4">food</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="#qd7Ou(lF:3FFcV#iVdA"><field name="tile">sprites.castle.tilePath1</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" id=")Ov92_C{;w]MxO:D3Tg," x="668" y="20"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="36%-`A.tDdGeuHDdB$MX"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id=",iS8w}s]DZO$7S_%uT6l"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom" id="t~.LS!Bcy||t9C-u^KQ%"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind" id="NxK_f2m.Lb,JZ,h/uAho"><field name="MEMBER">Food</field></shadow></value><statement name="HANDLER"><block type="spritedestroy" id="L#kj0}Sy[^mHt,w3^yUX"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="argument_reporter_custom" id="oAiW$|cxrIr4WSZQo[pP"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></block></value><next><block type="hudsetScore" id="(c(-oc!iG5NtHW!#uRUc"><value name="value"><shadow type="math_number" id="LbP%HBDWq1CY*I{)FTDD"><field name="NUM">1</field></shadow></value></block></next></block></statement></block><block type="spriteshittile" id="|@nYO?whNn$_}4K#?D08" x="30" y="550"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="B2)%`59:$u|xd?sCMbbe"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="^M$KA!3l,2lLz2?Fd}n."><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="6QWS+w=QX|ry2hDp~M3I"><field name="tile">sprites.dungeon.collectibleInsignia</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="}pd=;a`i[HJKNEXtur8@"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value></block></xml>
