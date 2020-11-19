@@ -1,5 +1,3 @@
-info.startCountdown(12)
-
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     otherSprite.destroy()
     info.setScore(1)
@@ -9,6 +7,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, func
         game.over(true)
     }
 })
+info.startCountdown(12)
 tiles.setTilemap(tilemap`level_0`)
 let player1 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
